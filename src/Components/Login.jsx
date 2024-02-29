@@ -26,13 +26,10 @@ const Login = () => {
   return (
     <div className="h-[500px] w-full flex items-center justify-center">
       <div>
-        <h1>Login</h1>
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <button>Submit</button>
+        <h1 className="text-blue text-3xl mb-10 ">Login</h1>
+        
         <div onClick={handleClickGoogle}>
-          <img src="" alt="" />
-          <p>Continue with Google</p>
+          <p className="py-2 px-5 border rounded bg-blue">Continue with Google</p>
         </div>
       </div>
     </div>
