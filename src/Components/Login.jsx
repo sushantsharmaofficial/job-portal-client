@@ -63,7 +63,7 @@ const Login = () => {
         >
           Sign in
         </button>
-        <button onclick={handleClickGoogle}
+        <button onClick={handleClickGoogle}
           className="w-full border border-gray-300 text-md p-2 rounded-lg mb-6 hover:bg-blue hover:text-white"
         >
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png" alt="img" className="w-6 h-6 inline mr-2" />
