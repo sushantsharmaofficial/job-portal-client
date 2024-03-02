@@ -26,8 +26,8 @@ const Card = ({ data }) => {
   } = data;
   return (
     <section className="card">
-      <Link
-        to={`/job/${_id}`}
+      <div
+      
         className="flex gap-4 flex-col sm:flex-row items-start"
       >
         <img src={companyLogo} alt="companylogo" width={80} height={80} />
@@ -54,7 +54,7 @@ const Card = ({ data }) => {
           </div>
           <p className="text-base text-primary/70">{jobDescription}</p>
         </div>
-      </Link>
+      </div>
     </section>
   );
 };
