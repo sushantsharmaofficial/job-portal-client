@@ -5,7 +5,6 @@ import PostJob from "../Pages/PostJob";
 import MyJobs from "../Pages/MyJobs";
 import SalaryPage from "../Pages/SalaryPage";
 import UpdateJobs from "../Pages/UpdateJobs";
-import Login from "../Components/Login";
 
 const router = createBrowserRouter([
   {
@@ -28,11 +27,7 @@ const router = createBrowserRouter([
         path: "/salary",
         element: <SalaryPage />,
       },
-      {
-        path: "/login",
-        element: <Login />,
-      },
-    
+
       {
         path: "/edit-job/:id",
         element: <UpdateJobs />,

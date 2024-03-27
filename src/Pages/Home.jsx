@@ -112,12 +112,12 @@ const Home = () => {
       {/* main content */}
       <div className="bg-[#fafafa] md:grid grid-cols-4 gap-8 lg:px-52 px-4 py-12">
         {/* left sidebar filters */}
-        <div className="bg-white p-4 rounded h-full shadow">
+        <div className="bg-gradient-to-t from-[#1F2126] to-[#33363D] drop-shadow-2xl p-4 rounded h-full shadow-3xl">
           <Sidebar handleClick={handleClick} handleChange={handleChange} />
         </div>
         {/* job cards middle */}
         {}
-        <div className=" col-span-2 bg-white p-4 rounded-sm shadow ">
+        <div className=" col-span-2 bg-gradient-to-t from-[#1F2126] to-[#33363D] drop-shadow-2xl p-4 rounded-sm shadow-3xl ">
           {isLoading ? (
             <div className="left-0">
               <Loader />
