@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-gradient-to-tr from-[#383737] via-[#0e0c0c] to-[#2c2c2e];
+}
+
+.color {
+  color: #1d1f23;
+  h1: #151618;
+  h2: #f6cd46;
+}
+.hari {
+  color: #e1b72e;
+}

@@ -31,16 +31,16 @@ const Navbar = () => {
     },
   ];
   return (
-    <header className="container mx-auto  max-w-screen-2xl xl:px-10 px-4">
+    <header className="container mx-auto  max-w-screen-2xl xl:px-10 px-4 ">
       {/* navbar desktop */}
-      <nav className="flex justify-between items-center">
+      <nav className="flex justify-between items-center ">
         <a href="/" className=" -mt-5">
           <img src={Logo} height={150} width={150} alt="logo" />
         </a>
         {/* nav items for large devices */}
         <ul className="hidden md:flex gap-12  ">
           {navItems.map(({ path, title }) => (
-            <li key={path} className=" text-base text-primary">
+            <li key={path} className=" text-base text-white">
               <NavLink
                 to={path}
                 className={({ isActive }) => (isActive ? "active" : "")}

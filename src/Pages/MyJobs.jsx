@@ -64,20 +64,20 @@ const MyJobs = () => {
   };
 
   return (
-    <div className="container mx-auto  max-w-screen-2xl xl:px-10 px-4">
+    <div className="container mx-auto  h-screen max-w-screen-2xl xl:px-10 px-4">
       <div className="my-jobs-container">
-        <h1 className="text-center p-4">All My Jobs</h1>
+        <h1 className="text-center text-white p-4">All My Jobs</h1>
         <div className=" flex p-2 mb-2 items-center justify-center">
           <input
             type="text"
             name="search"
             id="search"
             onChange={(e) => setSearchText(e.target.value)}
-            className="py-2 pl-3 border focus:outline-none lg:w-6/12 mb-4 w-full"
+            className="  bg-gradient-to-tl from-[#000000]  to-[#3f3f3f] drop-shadow-2xl py-2 pl-3 border border-[#f6cd46] text-white rounded-l-xl focus:outline-none lg:w-6/12 mb-4 w-full"
           />
           <button
             onClick={handleSearch}
-            className="bg-blue text-white font-semibold px-8 py-2 rounded-sm mb-4"
+            className="bg-[#f6cd46] text-white font-semibold px-8 py-2 rounded-r-xl mb-4"
           >
             Search
           </button>
@@ -86,7 +86,7 @@ const MyJobs = () => {
       {/* table */}
       <section className="py-1 bg-blueGray-50">
         <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4 mx-auto mt-5">
-          <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded ">
+          <div className="relative flex flex-col min-w-0 break-words bg-gradient-to-tl from-[#000000]  to-[#3f3f3f] drop-shadow-2xl w-full mb-6 shadow-lg rounded-3xl text-white ">
             <div className="rounded-t mb-0 px-4 py-3 border-0">
               <div className="flex flex-wrap items-center">
                 <div className="relative w-full px-4 max-w-full flex-grow flex-1">
@@ -97,7 +97,7 @@ const MyJobs = () => {
                 <div className="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
                   <Link to={"/post-job"}>
                     <button
-                      className="bg-blue hover:scale-[1.1] transition-all duration-150 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear  "
+                      className="bg-[#f6cd46] hover:scale-[1.1] transition-all duration-150 text-black active:bg-[#e1b72e] text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear  "
                       type="button"
                     >
                       Post a new job
@@ -172,7 +172,7 @@ const MyJobs = () => {
           </div>
         </div>
         {/* pagination */}
-        <div className="flex justify-center text-black space-x-6">
+        <div className="flex justify-center text-white space-x-6">
           {currentPage > 1 && (
             <button onClick={previousPage} className=" hover:underline ">
               Previous

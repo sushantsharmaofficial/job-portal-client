@@ -107,17 +107,17 @@ const Home = () => {
 
   const result = filteredData(jobs, selectedCategory, query);
   return (
-    <div className="">
+    <div className=" ">
       <Banner query={query} handleInputChange={handleInputChange} />
       {/* main content */}
-      <div className="bg-[#fafafa] md:grid grid-cols-4 gap-8 lg:px-52 px-4 py-12">
+      <div className=" md:grid grid-cols-4 gap-8 lg:px-52 px-4 py-12">
         {/* left sidebar filters */}
-        <div className="bg-gradient-to-t from-[#1F2126] to-[#33363D] drop-shadow-2xl p-4 rounded h-full shadow-3xl">
+        <div className="bg-gradient-to-tl from-[#000000]  to-[#3f3f3f] drop-shadow-2xl p-4 rounded-3xl h-full shadow">
           <Sidebar handleClick={handleClick} handleChange={handleChange} />
         </div>
         {/* job cards middle */}
         {}
-        <div className=" col-span-2 bg-gradient-to-t from-[#1F2126] to-[#33363D] drop-shadow-2xl p-4 rounded-sm shadow-3xl ">
+        <div className="bg-gradient-to-tl from-[#000000]  to-[#3f3f3f] col-span-2 bg-mainSlider drop-shadow-2xl p-4 rounded-3xl shadow-3xl ">
           {isLoading ? (
             <div className="left-0">
               <Loader />
@@ -157,7 +157,7 @@ const Home = () => {
           )}
         </div>
         {/* right side resume uploader */}
-        <div className="bg-white p-4 rounded shadow h-full">
+        <div className="bg-gradient-to-tl from-[#000000]  to-[#3f3f3f] p-4 rounded-3xl shadow h-full">
           <NewsLetter />
         </div>
       </div>
