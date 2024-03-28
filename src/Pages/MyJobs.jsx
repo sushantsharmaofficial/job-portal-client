@@ -86,7 +86,7 @@ const MyJobs = () => {
       {/* table */}
       <section className="py-1 bg-blueGray-50">
         <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4 mx-auto mt-5">
-          <div className="relative flex flex-col min-w-0 break-words bg-gradient-to-tl from-[#000000]  to-[#3f3f3f] drop-shadow-2xl w-full mb-6 shadow-lg rounded-3xl text-white ">
+          <div className="relative flex flex-col min-w-0 break-words bg-gradient-to-r from-[#141414] via-[#070707]  to-[#141414] drop-shadow-2xl w-full mb-6 shadow-lg rounded-3xl text-white ">
             <div className="rounded-t mb-0 px-4 py-3 border-0">
               <div className="flex flex-wrap items-center">
                 <div className="relative w-full px-4 max-w-full flex-grow flex-1">

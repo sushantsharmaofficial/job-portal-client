@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gradient-to-tr from-[#383737] via-[#0e0c0c] to-[#2c2c2e];
+  @apply bg-gradient-to-r from-[#000000] via-[#0e0c0c] to-[#000000];
 }
 
 .color {

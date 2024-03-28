@@ -31,7 +31,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <header className="container mx-auto  max-w-screen-2xl xl:px-10 px-4 ">
+    <header className="container mx-auto  max-w-screen-2xl xl:px-8 px-4 ">
       {/* navbar desktop */}
       <nav className="flex justify-between items-center ">
         <a href="/" className=" -mt-5">

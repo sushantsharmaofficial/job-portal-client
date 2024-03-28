@@ -49,17 +49,17 @@ const PostJob = () => {
   return (
     <div className="container mx-auto  max-w-screen-2xl xl:px-10 px-4">
       {/* form */}
-      <div className="bg-[#fafafa] py-10 px-4 lg:px-16 shadow ">
+      <div className="bg-gradient-to-r from-[#141414] via-[#070707] to-[#141414] drop-shadow-2xl p-4 rounded-3xl  py-10 px-4 lg:px-16 shadow ">
         <form onSubmit={handleSubmit(onSubmit)} className=" space-y-7">
           {/* 1st row */}
-          <div className="create-job-flex">
-            <div className="lg:w-1/2 w-full">
+          <div className="create-job-flex text-white">
+            <div className="lg:w-1/2 w-full ">
               <label className="block mb-2 text-lg">Job Title:</label>
               <input
                 type="text"
                 defaultValue={"Web Developer"}
                 {...register("jobTitle", { required: true })}
-                className="create-job-input"
+                className="create-job-input "
               />
             </div>
             <div className="lg:w-1/2 w-full">
@@ -73,7 +73,7 @@ const PostJob = () => {
             </div>
           </div>
           {/* 2nd row */}
-          <div className="create-job-flex">
+          <div className="create-job-flex text-white">
             <div className="lg:w-1/2 w-full">
               <label className="block mb-2 text-lg">Minimum Salary:</label>
               <input
@@ -94,7 +94,7 @@ const PostJob = () => {
             </div>
           </div>
           {/* 3rd row */}
-          <div className="create-job-flex">
+          <div className="create-job-flex text-white">
             <div className="lg:w-1/2 w-full">
               <label className="block mb-2 text-lg">Salary Type:</label>
               <select
@@ -118,7 +118,7 @@ const PostJob = () => {
             </div>
           </div>
           {/* 4th row */}
-          <div className="create-job-flex">
+          <div className="create-job-flex text-white">
             <div className="lg:w-1/2 w-full">
               <label className="block mb-2 text-lg">Job Posting Date:</label>
               <input
@@ -128,7 +128,7 @@ const PostJob = () => {
                 className="create-job-input"
               />
             </div>
-            <div className="lg:w-1/2 w-full">
+            <div className="lg:w-1/2 w-full text-white">
               <label className="block mb-2 text-lg">Experience Level:</label>
               <select
                 {...register("experienceLevel", { required: true })}
@@ -142,7 +142,7 @@ const PostJob = () => {
             </div>
           </div>
           {/*  5th row */}
-          <div>
+          <div className="text-white">
             <label className="block mb-2 text-lg">Required Skill Set:</label>
             <CreatableSelect
               defaultValue={selectedOptions}
@@ -153,7 +153,7 @@ const PostJob = () => {
             />
           </div>
           {/* 6th row  */}
-          <div className="create-job-flex">
+          <div className="create-job-flex text-white">
             <div className="lg:w-1/2 w-full">
               <label className="block mb-2 text-lg">Company Logo:</label>
               <input
@@ -163,11 +163,11 @@ const PostJob = () => {
                 className="create-job-input"
               />
             </div>
-            <div className="lg:w-1/2 w-full">
+            <div className="lg:w-1/2 w-full ">
               <label className="block mb-2 text-lg">Employment Type:</label>
               <select
                 {...register("employmentType", { required: true })}
-                className="create-job-input"
+                className="create-job-input "
               >
                 <option value="">Choose your job type</option>
                 <option value="Temporary">Temporary</option>
@@ -177,18 +177,18 @@ const PostJob = () => {
             </div>
           </div>
           {/* 7th row */}
-          <div className="w-full">
+          <div className="w-full text-white">
             <label className="block mb-2 text-lg">Job Description:</label>
             <textarea
               placeholder="Write a description of your job here"
               rows={6}
               {...register("jobDescription", { required: true })}
-              className="w-full pl-3 py-1.5 focus:outline-none placeholder:texxtgray-500"
+              className="bg-[#eeeded] drop-shadow-2xl w-full pl-3 py-1.5 focus:outline-none placeholder:texxtgray-500 rounded-xl"
             ></textarea>
           </div>
 
           {/* last row */}
-          <div className="w-full">
+          <div className="w-full text-white">
             <label className="block mb-2 text-lg">Job Posted By:</label>
             <input
               type="email"
@@ -200,7 +200,7 @@ const PostJob = () => {
 
           <input
             type="submit"
-            className="my-5 block mt-12 bg-blue text-white font-semibold px-8 py-2 rounded-sm cursor-pointer"
+            className="my-5 block mt-12 bg-blue rounded-lg text-white font-semibold px-8 py-2 rounded-sm cursor-pointer"
           />
         </form>
       </div>

@@ -68,8 +68,11 @@ const UpdateJobs = () => {
   return (
     <div className="container mx-auto  max-w-screen-2xl xl:px-10 px-4">
       {/* form */}
-      <div className="bg-[#fafafa] py-10 px-4 lg:px-16 shadow ">
-        <form onSubmit={handleSubmit(onSubmit)} className=" space-y-7">
+      <div className="bg-gradient-to-r from-[#141414] via-[#070707] to-[#141414] drop-shadow-2xl p-4 rounded-3xl   py-10 px-4 lg:px-16 shadow ">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className=" space-y-7 text-white"
+        >
           {/* 1st row */}
           <div className="create-job-flex">
             <div className="lg:w-1/2 w-full">

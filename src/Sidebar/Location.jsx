@@ -4,8 +4,8 @@ import InputField from "../Components/InputField";
 const Location = ({ handleChange }) => {
   return (
     <div>
-      <h4 className="text-lg font-medium mb-2">Location</h4>
-      <div>
+      <h4 className="text-lg font-medium mb-2 text-blue">Location</h4>
+      <div className="text-white">
         <label className="sidebar-label-container">
           <input
             type="radio"

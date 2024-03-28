@@ -15,8 +15,8 @@ const JobPostingData = ({ handleChange }) => {
 
   return (
     <div>
-      <h4 className="text-lg font-medium mb-2">Job Posting Data</h4>
-      <div>
+      <h4 className="text-lg font-medium mb-2 text-blue">Job Posting Data</h4>
+      <div className="text-white">
         <label className="sidebar-label-container">
           <input
             type="radio"

@@ -32,7 +32,7 @@ const SalaryPage = () => {
             name="search"
             id="search"
             onChange={(e) => setSearchText(e.target.value)}
-            className="py-2 pl-3 border focus:outline-none lg:w-6/12 mb-4 w-full"
+            className="bg-gradient-to-tl from-[#000000]  to-[#3f3f3f] py-2 pl-3 border text-gray-200 focus:outline-none lg:w-6/12 mb-4 w-full rounded-l-lg"
           />
           <button
             onClick={handleSearch}
@@ -45,10 +45,13 @@ const SalaryPage = () => {
       {/* salary display card */}
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 my-12 items-center">
         {salary.map((data, index) => (
-          <div key={data.id} className="shadow px-4 py-8">
-            <h4 className="font-semibold text-xl ">{data.title}</h4>
+          <div
+            key={data.id}
+            className=" bg-gradient-to-r from-[#1b1a1a] to-[#070707]   drop-shadow-2xl rounded-lg shadow px-4 py-8"
+          >
+            <h4 className="font-semibold text-white text-xl ">{data.title}</h4>
             <p className="my-2 font-medium text-blue text-lg">{data.salary}</p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 text-gray-300">
               <a href="/" className="underline">
                 {" "}
                 {data.status}

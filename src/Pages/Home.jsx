@@ -110,14 +110,14 @@ const Home = () => {
     <div className=" ">
       <Banner query={query} handleInputChange={handleInputChange} />
       {/* main content */}
-      <div className=" md:grid grid-cols-4 gap-8 lg:px-52 px-4 py-12">
+      <div className=" md:grid grid-cols-4 gap-8 lg:px-20 px-4 py-12">
         {/* left sidebar filters */}
-        <div className="bg-gradient-to-tl from-[#000000]  to-[#3f3f3f] drop-shadow-2xl p-4 rounded-3xl h-full shadow">
+        <div className="bg-gradient-to-tl from-[#141414]  to-[#070707] drop-shadow-2xl p-4 rounded-3xl h-full shadow">
           <Sidebar handleClick={handleClick} handleChange={handleChange} />
         </div>
         {/* job cards middle */}
         {}
-        <div className="bg-gradient-to-tl from-[#000000]  to-[#3f3f3f] col-span-2 bg-mainSlider drop-shadow-2xl p-4 rounded-3xl shadow-3xl ">
+        <div className="bg-gradient-to-r from-[#141414] via-[#070707]  to-[#141414] col-span-2  drop-shadow-2xl p-4 rounded-3xl shadow-3xl ">
           {isLoading ? (
             <div className="left-0">
               <Loader />
@@ -126,13 +126,15 @@ const Home = () => {
             <Jobs result={result} />
           ) : (
             <>
-              <h3 className="text-lg font-bold mb-2 ">{result.length} Jobs</h3>
-              <p>No Jobs Found</p>
+              <h3 className="text-2xl text-white font-bold mb-2 ">
+                {result.length} Jobs
+              </h3>
+              <p className="text-white">No Jobs Found</p>
             </>
           )}
           {/* pagination here */}
           {result.length > 0 && (
-            <div className="flex justify-center mt-4 space-x-8">
+            <div className="flex justify-center mt-4 space-x-8 text-white">
               <button
                 className="hover:underline"
                 onClick={previousPage}
@@ -157,7 +159,7 @@ const Home = () => {
           )}
         </div>
         {/* right side resume uploader */}
-        <div className="bg-gradient-to-tl from-[#000000]  to-[#3f3f3f] p-4 rounded-3xl shadow h-full">
+        <div className="bg-gradient-to-tl from-[#070707]  to-[#141414] p-4 rounded-3xl shadow h-full">
           <NewsLetter />
         </div>
       </div>

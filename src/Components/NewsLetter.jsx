@@ -6,7 +6,7 @@ const NewsLetter = () => {
     <div>
       {/* upper part */}
       <div>
-        <h3 className=" text-lg font-bold mb-2 flex items-center gap-2">
+        <h3 className=" text-2xl text-white font-bold mb-2 flex items-center gap-2">
           <FaEnvelopeOpenText />
           Email me for jobs
         </h3>
@@ -21,19 +21,19 @@ const NewsLetter = () => {
             name="email"
             id="email"
             placeholder="name@gmail.com"
-            className="w-full block py-2 pl-3 border focus:outline-none"
+            className="w-full bg-gradient-to-tl from-[#000000]  to-[#3f3f3f] drop-shadow-2xl block py-2 pl-3 border focus:outline-none"
           />
           <input
             type="submit"
             value={"Subscribe"}
-            className="w-full block py-2 pl-3 border focus:outline-none bg-blue rounded-sm text-white cursor-pointer font-semibold"
+            className=" w-full block py-2 pl-3 border focus:outline-none bg-blue rounded-sm text-white cursor-pointer font-semibold"
           />
         </div>
       </div>
 
       {/* lower part */}
       <div className="mt-20">
-        <h3 className=" text-lg font-bold mb-2 flex items-center gap-2">
+        <h3 className=" text-2xl text-white font-bold mb-2 flex items-center gap-2">
           <FaRocket />
           Get noticed faster
         </h3>
@@ -47,7 +47,7 @@ const NewsLetter = () => {
           <input
             type="submit"
             value={"Upload Your CV"}
-            className="w-full block py-2 pl-3 border focus:outline-none bg-blue rounded-sm text-white cursor-pointer font-semibold"
+            className=" w-full block py-2 pl-3 border focus:outline-none bg-blue rounded-sm text-white cursor-pointer font-semibold"
           />
         </div>
       </div>

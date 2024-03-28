@@ -5,13 +5,13 @@ import InputField from "../Components/InputField";
 const Salary = ({ handleChange, handleClick }) => {
   return (
     <div>
-      <h4 className="text-lg font-medium mb-2">Salary</h4>
-      <div className="mb-4">
+      <h4 className="text-lg font-medium mb-2 text-blue">Salary</h4>
+      <div className="mb-4 text-white ">
         <Button onCLickHandler={handleClick} value="" title="Hourly" />
         <Button onCLickHandler={handleClick} value="monthly" title="Monthly" />
         <Button onCLickHandler={handleClick} value="yearly" title="Yearly" />
       </div>
-      <div>
+      <div className="text-white">
         <label className="sidebar-label-container">
           <input
             type="radio"
