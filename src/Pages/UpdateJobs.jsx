@@ -205,7 +205,7 @@ const UpdateJobs = () => {
               rows={6}
               defaultValue={jobDescription}
               {...register("jobDescription", { required: true })}
-              className="w-full pl-3 py-1.5 focus:outline-none placeholder:texxtgray-500"
+              className="w-full text-black/90 pl-3 py-1.5 focus:outline-none placeholder:texxtgray-500"
             ></textarea>
           </div>
 
