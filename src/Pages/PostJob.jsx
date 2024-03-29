@@ -183,7 +183,7 @@ const PostJob = () => {
               placeholder="Write a description of your job here"
               rows={6}
               {...register("jobDescription", { required: true })}
-              className="bg-[#eeeded] drop-shadow-2xl w-full pl-3 py-1.5 focus:outline-none placeholder:texxtgray-500 rounded-xl"
+              className="bg-[#eeeded] drop-shadow-2xl w-full pl-3 py-1.5 focus:outline-none text-black/90 placeholder:texxt-gray-500 rounded-xl"
             ></textarea>
           </div>
 
@@ -200,7 +200,7 @@ const PostJob = () => {
 
           <input
             type="submit"
-            className="my-5 block mt-12 bg-blue rounded-lg text-white font-semibold px-8 py-2 rounded-sm cursor-pointer"
+            className="my-5 block mt-12 bg-blue rounded-lg text-white font-semibold px-8 py-2  cursor-pointer"
           />
         </form>
       </div>
