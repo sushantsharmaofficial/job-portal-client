@@ -41,7 +41,7 @@ const Card = ({ data }) => {
               {employmentType}
             </span>
             <span className="flex items-center gap-2">
-              <FiDollarSign />
+              Rs
               {minPrice}-{maxPrice}k
             </span>
             <span className="flex items-center gap-2">
